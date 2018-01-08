@@ -1,0 +1,144 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 10,
+        "name": "Print list of Inst and the volume in the specified date range",
+        "description": "",
+        "id": "print-trade-volume;print-list-of-inst-and-the-volume-in-the-specified-date-range;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 76981085,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I have the files trades and inst",
+            "match": {
+              "location": "TradeAppSteps.java:9"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2106930,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I specify 11/11/2017 23:11:01 and 17/11/2017 23:11:01",
+            "match": {
+              "arguments": [
+                {
+                  "val": "11/11/2017 23:11:01",
+                  "offset": 10
+                },
+                {
+                  "val": "17/11/2017 23:11:01",
+                  "offset": 34
+                }
+              ],
+              "location": "TradeAppSteps.java:13"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 12338601,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I see list of trade instruments and its volume printed in the specified date range",
+            "match": {
+              "location": "TradeAppSteps.java:17"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@test"
+          }
+        ]
+      },
+      {
+        "line": 19,
+        "name": "Print list of Inst and the volume not in the specified date range",
+        "description": "",
+        "id": "print-trade-volume;print-list-of-inst-and-the-volume-not-in-the-specified-date-range;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 119774,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I have the files trades and inst",
+            "match": {
+              "location": "TradeAppSteps.java:9"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 267385,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I specify 11/11/2017 23:11:01 and 17/11/2017 23:11:01",
+            "match": {
+              "arguments": [
+                {
+                  "val": "11/11/2017 23:11:01",
+                  "offset": 10
+                },
+                {
+                  "val": "17/11/2017 23:11:01",
+                  "offset": 34
+                }
+              ],
+              "location": "TradeAppSteps.java:13"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1350934,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I see list of trade instruments and its volume printed not in the specified date range",
+            "match": {
+              "location": "TradeAppSteps.java:20"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 12,
+            "name": "@test"
+          }
+        ]
+      }
+    ],
+    "name": "Print Trade Volume",
+    "description": "",
+    "id": "print-trade-volume",
+    "keyword": "Feature",
+    "uri": "trade_volume.feature"
+  }
+]
